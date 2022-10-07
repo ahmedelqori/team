@@ -150,3 +150,15 @@ function litres(time) {
   return Math.floor(0.5*time)
 }
 */
+/*
+function oddOrEven(array) {
+  if (array.length == 0) {
+    array.push(0);
+  }
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    count += array[i];
+  }
+  return count % 2 == 0 ? "even" : "odd";
+}
+*/
