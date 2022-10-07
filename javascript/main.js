@@ -140,3 +140,9 @@ function nbYear(p0, percent, aug, p) {
 
 console.log(nbYear(1500, 5, 100, 5000));
 */
+/*
+function maps(x){
+  return x.map(function(ele){return ele + ele})
+}
+
+*/
