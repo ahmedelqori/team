@@ -104,3 +104,15 @@ function squareDigits(num){
   return +a
 }
 */
+/*
+function getCount(str) {
+  let count = 0;
+  let array = str.split("");
+  for(let i = 0;i<array.length;i++){
+    if(array[i] == "a"||array[i] == "e"||array[i] == "i"||array[i] == "o"||array[i] == "u"){
+      count+=1
+    }
+  }
+  return count
+}
+*/
