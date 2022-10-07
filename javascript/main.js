@@ -53,3 +53,12 @@ var countSheep = function (num){
   return string
 }
 */
+/*
+function findSmallestInt(args) {
+  return args
+    .sort(function (a, b) {
+      return a - b;
+    })
+    .slice(0, 1);
+}
+*/
