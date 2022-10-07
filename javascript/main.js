@@ -91,3 +91,16 @@ function points(games) {
   return count
 }
 */
+/*
+
+function squareDigits(num){
+  let array = num.toString().split("")
+  let b= 0
+  let a = "";
+  for(let i = 0;i<array.length;i++){
+   b=  array[i]**2
+    a+=b
+  }
+  return +a
+}
+*/
