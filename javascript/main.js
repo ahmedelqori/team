@@ -62,3 +62,8 @@ function findSmallestInt(args) {
     .slice(0, 1);
 }
 */
+/*
+function opposite(number) {
+  return -number
+}
+*/
