@@ -167,3 +167,19 @@ function solution(str){
   return str.split('').reverse().join('');  
 }
 */
+/*
+function XO(str) {
+  let array = str.split("")
+  let countX = 0;
+  let countO = 0;
+  for(let i = 0;i<array.length;i++){
+        if(array[i].toLowerCase()=="o"){
+          countO+=1
+        }else if(array[i].toLowerCase()=="x"){
+          countX+=1
+        }
+    }
+  return countX == countO ?true:false
+}
+
+*/
