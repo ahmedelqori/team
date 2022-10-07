@@ -162,3 +162,8 @@ function oddOrEven(array) {
   return count % 2 == 0 ? "even" : "odd";
 }
 */
+/*
+function solution(str){
+  return str.split('').reverse().join('');  
+}
+*/
