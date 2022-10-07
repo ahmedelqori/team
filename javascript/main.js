@@ -121,3 +121,22 @@ function makeNegative(num) {
   return num<0?num:-num
 }
 */
+/*
+// Growth Of A population
+function nbYear(p0, percent, aug, p) {
+  let a = p0;
+  let b = 0;
+  let result = 0;
+  for (let i = 1; ; i++) {
+    b = a + a * (percent / 100) + aug;
+    a = b;
+    if (a >= p) {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+
+console.log(nbYear(1500, 5, 100, 5000));
+*/
