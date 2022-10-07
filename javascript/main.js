@@ -67,3 +67,12 @@ function opposite(number) {
   return -number
 }
 */
+/*
+function sumMix(x){
+let count =0;
+  for(let i = 0;i<x.length;i++){
+    count+= +x[i]
+  }
+  return count
+}
+*/
