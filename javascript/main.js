@@ -144,5 +144,9 @@ console.log(nbYear(1500, 5, 100, 5000));
 function maps(x){
   return x.map(function(ele){return ele + ele})
 }
-
+*/
+/*
+function litres(time) {
+  return Math.floor(0.5*time)
+}
 */
