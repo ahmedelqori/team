@@ -204,3 +204,16 @@ var isSquare = function (n) {
   return count == 1 ? true : false;
 };
 */
+/*
+function friend(friends){
+  return friends.filter(n => n.length === 4)
+}
+*/
+
+/*
+function isIsogram(str) {
+  let array = Array.from(new Set(str.toLowerCase().split(""))).join("");
+
+  return array == str.toLowerCase() ? true : false;
+}
+*/
