@@ -188,3 +188,19 @@ function paperwork(n, m) {
   return n>0&&m>0?n*m:0
 }
 */
+/*
+var isSquare = function (n) {
+  let count = 0;
+  if (n < 0) {
+    return false;
+  } else {
+    for (let i = 0; i <= n; i++) {
+      if (i ** 2 == n) {
+        count = 1;
+        break;
+      }
+    }
+  }
+  return count == 1 ? true : false;
+};
+*/
