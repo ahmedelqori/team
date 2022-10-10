@@ -230,3 +230,8 @@ function isIsogram(str) {
   return count == 1 ? false : true;
 }
 */
+function abbrevName(name) {
+  let array = name.toUpperCase().split(" ");
+
+  return array[0][0] + "." + array[1][0];
+}
