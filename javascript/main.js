@@ -230,8 +230,17 @@ function isIsogram(str) {
   return count == 1 ? false : true;
 }
 */
+/*
 function abbrevName(name) {
   let array = name.toUpperCase().split(" ");
 
   return array[0][0] + "." + array[1][0];
+}
+*/
+
+function reverseWords(str) {
+  let array = str.split(" ").map(function (ele) {
+    return ele.split("").reverse().join("");
+  });
+  return array.join(" ");
 }
