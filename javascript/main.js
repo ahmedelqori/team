@@ -325,3 +325,99 @@ function isTriangle(a, b, c) {
   }
 }
 */
+/*
+function duplicateEncode(word) {
+  let array = word.toLowerCase().split("");
+  let check = false;
+  for (let i = 1; i < array.length; i++) {
+    if (array[0] == array[i]) {
+      check = true;
+      break;
+    }
+  }
+  if (check == true) {
+    let result = [")"];
+    /////////////////////
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] == array[i - 1] && result[i - 1] == ")") {
+        result.push(")");
+      } else if (array[i] == array[i - 1] && result[i - 1] == "(") {
+        result.push("(");
+      } else if (array[i] != array[i - 1] && result[i - 1] == "(") {
+        result.push(")");
+      } else if (array[i] != array[i - 1] && result[i - 1] == ")") {
+        result.push("(");
+      }
+    }
+    return result.join("");
+  } else if (check == false) {
+    let result = ["("];
+
+    for (let i = 1; i < array.length; i++) {
+      if (array[i] == array[i - 1] && result[i - 1] == "(") {
+        result.push("(");
+      } else if (array[i] == array[i - 1] && result[i - 1] == ")") {
+        result.push(")");
+      } else if (array[i] != array[i - 1] && result[i - 1] == ")") {
+        result.push("(");
+      } else if (array[i] != array[i - 1] && result[i - 1] == "(") {
+        result.push(")");
+      }
+    }
+
+    return result.join("");
+  }
+}
+
+console.log(duplicateEncode("din")); // (((
+console.log(duplicateEncode("recede")); // ()()()
+console.log(duplicateEncode("Success")); // )())())
+*/
+/*
+function comp(array1, array2) {
+  if (array1.length == 0 || array2.length == 0) {
+    return true;
+  } else {
+    let a = array1.sort(function (a, b) {
+      return a - b;
+    });
+    let b = array2.sort(function (a, b) {
+      return a - b;
+    });
+
+    let check = 0;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] ** 2 == b[i]) {
+        check += 1;
+      } else {
+        check = 0;
+        break;
+      }
+    }
+    return check != 0 ? true : false;
+  }
+}
+
+function comp(array1, array2){
+  let result = false;
+ 
+  if ( array1 && array2 ) {
+    if (array1.length === 0 && array2.length === 0){
+      result = true;
+    } else {
+      const squareRoots = array2.map(num => Math.sqrt(num));
+      array1.sort((a, b) => a-b);
+      squareRoots.sort((a, b) => a-b);
+      for (let i=0; i<squareRoots.length; i++) {
+        if (array1.indexOf(squareRoots[i]) 
+            !== array1.indexOf(array1[i])) {
+          result = false;
+          break;
+        }
+        result = true;
+      }
+    }
+  }
+  return result;
+}
+*/
