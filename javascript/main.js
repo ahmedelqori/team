@@ -293,3 +293,18 @@ function findNextSquare(sq) {
   
 }
 */
+function accum(s) {
+  let array = s.split("");
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(array[i].repeat(i + 1));
+  }
+  return result
+    .join(" ")
+    .toLowerCase()
+    .split(" ")
+    .map(function (ele) {
+      return ele[0].toUpperCase() + ele.slice(1);
+    })
+    .join("-");
+}
