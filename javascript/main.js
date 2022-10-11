@@ -293,6 +293,7 @@ function findNextSquare(sq) {
   
 }
 */
+/*
 function accum(s) {
   let array = s.split("");
   let result = [];
@@ -308,3 +309,10 @@ function accum(s) {
     })
     .join("-");
 }
+*/
+/*
+function printerError(s) {
+  let array = s.split("").sort().reverse().join("");
+  return `${array.slice(0, array.indexOf("m")).length}/${array.length}`;
+}
+*/
