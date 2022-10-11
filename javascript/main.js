@@ -237,10 +237,42 @@ function abbrevName(name) {
   return array[0][0] + "." + array[1][0];
 }
 */
-
+/*
 function reverseWords(str) {
   let array = str.split(" ").map(function (ele) {
     return ele.split("").reverse().join("");
   });
   return array.join(" ");
 }
+*/
+/*
+function DNAtoRNA(dna) {
+  let array  = dna.split("");
+  let result = []
+  for(let i = 0;i<array.length;i++){
+    if(array[i] == "U"){
+      result.push("T")
+  }else if(array[i] == "T"){
+      result.push("U")
+    }else{
+      result.push(array[i])
+    }
+  }
+  return result.join("")
+}
+*/
+/*
+function removeChar(str) {
+  return "" + str.substring(1, str.length - 1);
+}
+
+console.log(removeChar("Ahmned"));
+*/
+/*
+String.prototype.toJadenCase = function () {
+  let array = Array.from(this).join("").split(" ")
+  return array.map(function(ele){
+    return ele[0].toUpperCase()+ele.slice(1)
+  }).join(" ")
+};
+*/
