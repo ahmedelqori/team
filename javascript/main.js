@@ -276,3 +276,20 @@ String.prototype.toJadenCase = function () {
   }).join(" ")
 };
 */
+/*
+function findNextSquare(sq) {
+  let result = 0;
+  if(sq>=0){
+    for(let i = 0;i<=sq;i++){
+      if(i**2 == sq){
+        result = i;
+        break;
+      }else{
+        result+=0
+      }
+    }
+    return result !=0?(result+1)**2:-1
+  }
+  
+}
+*/
