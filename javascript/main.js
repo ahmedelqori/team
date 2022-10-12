@@ -476,3 +476,8 @@ function duplicateEncode(word) {
 }
 console.log(duplicateEncode("Success"));
 */
+function sumStrings(a, b) {
+  return (BigInt(a) + BigInt(b)).toString();
+}
+
+console.log(sumStrings("00103", "08567"));
