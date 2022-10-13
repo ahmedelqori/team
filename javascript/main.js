@@ -476,8 +476,54 @@ function duplicateEncode(word) {
 }
 console.log(duplicateEncode("Success"));
 */
+/*
 function sumStrings(a, b) {
   return (BigInt(a) + BigInt(b)).toString();
 }
+*/
+/*
+function zeros(n) {
+  let number = 1;
+  let result = "";
+  if (n == 0 || n == 1) {
+    return 0;
+  } else {
+    for (let i = 1; i <= n; i++) {
+      number *= i;
+    }
+    result += number;
+    let array = result.split("").reverse();
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] != 0) {
+        return array.slice(0, i).length;
+      }
+    }
+  }
+}
 
-console.log(sumStrings("00103", "08567"));
+*/
+/*
+function rgb(r, g, b) {
+  let array = [r, g, b];
+  let result = [];
+  let deci = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+  let hexa = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+  for (let i = 0; i < 3; i++) {
+    if (array[i] < 0) {
+      result.push("00");
+    } else if (array[i] >= 255) {
+      result.push("FF");
+    } else {
+      let a = Math.floor(array[i] / 16); // 13
+      let b = (array[i] / 16 - Math.floor(array[i] / 16)) * 16; // 0.75
+
+      let indexA = hexa[a];
+      let indexB = hexa[b];
+      result.push([indexA, indexB].join(""));
+    }
+  }
+
+  return result.join("");
+}
+*/

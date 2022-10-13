@@ -42,8 +42,3 @@ console.log(
   ])
 ); // {pos:[3,7], peaks:[6,3]}
 */
-function duplicateEncode(word) {
-  let array = word.toLowerCase().split("");
-  let result = [];
-}
-console.log(duplicateEncode("Success"));
