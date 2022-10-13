@@ -527,3 +527,46 @@ function rgb(r, g, b) {
   return result.join("");
 }
 */
+function isPangram(string) {
+  let alphabet = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
+
+  let count = 1;
+  let text = string.toLowerCase();
+  let array = Array.from(new Set(text.match(/[a-z]/gi))).sort();
+  for (let i = 0; i < alphabet.length; i++) {
+    if (array[i] != alphabet[i]) {
+      count = 0;
+      break;
+    }
+  }
+  return count == 1 ? true : false;
+}
+console.log(isPangram("The quick brown fox jumps over the lazy dog."));
+console.log(isPangram("This is not a pangram."));
