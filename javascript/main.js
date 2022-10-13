@@ -613,3 +613,14 @@ function alphabetPosition(text) {
 }
 console.log(alphabetPosition("The sunset sets at twelve o' clock."));
 */
+/*
+function expandedForm(num) {
+  let array = num.toString().split("");
+  let result = [];
+  for (let i = 0; i < array.length; i++)
+    if (array[i] != 0) {
+      result.push(`${array[i] + "0".repeat(array.slice(i + 1).length)}`);
+    }
+  return result.join(" + ");
+}
+*/
