@@ -670,3 +670,48 @@ function high(x) {
   );
 }
 */
+/*
+var uniqueInOrder = function (iterable) {
+  let array = "";
+  if (typeof iterable == "object") {
+    array = iterable.map((ele) => (typeof ele == "number" ? +ele : ele));
+  } else {
+    array = iterable
+      .split("")
+      .map((ele) => (typeof ele == "number" ? +ele : ele));
+  }
+  let arr = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == array[i + 1]) {
+      arr.push();
+    } else {
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+};
+*/
+/*
+function findOdd(A) {
+  let array = A.sort();
+  let a = Array.from(new Set(array));
+  let result = [];
+  let count = 0;
+  for (let i = 0; i < a.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (array[j] == a[i]) {
+        count += 1;
+      } else {
+        count += 0;
+      }
+    }
+    if (count % 2 == 1) {
+      result.push(a[i]);
+      break;
+    }
+    count = 0;
+  }
+  return +result.join("");
+}
+*/
