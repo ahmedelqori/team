@@ -803,5 +803,33 @@ function duplicateCount(text) {
   return c.length == 0 ? 0 : c.length;
 }
 */
-console.log(duplicateCount("abcde"));
-console.log(duplicateCount("aabBcde"));
+/*
+function sumDigPow(words) {
+  if (words.length == 0) {
+    return words;
+  } else {
+    let wordsArr = words.split(" ");
+    let numbersArr = wordsArr
+      .map((ele) => +ele.split("").sort().join("")[0])
+      .filter(Number);
+    let array = [""];
+    if (wordsArr.length == numbersArr.length) {
+      for (let i = 0; i < wordsArr.length; i++) {
+        let count = wordsArr[i].split("").sort().join("")[0] - 1;
+        array.splice(count, 0, wordsArr[i]);
+      }
+      return array.filter((ele) => ele != "");
+    } else {
+      return "";
+    }
+  }
+}
+
+*/
+/*
+function order(words){
+  return words.split(' ').sort(function(a, b){
+      return a.match(/\d/) - b.match(/\d/);
+   }).join(' ');
+}  
+*/
