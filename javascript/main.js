@@ -715,3 +715,44 @@ function findOdd(A) {
   return +result.join("");
 }
 */
+function wave(string) {
+  let arrayString = string.split("");
+  let arraySpace = arrayString
+    .map(function (ele, i) {
+      if (ele == " ") {
+        return i;
+      }
+    })
+    .filter((ele) => ele != undefined);
+
+  let array = arrayString.filter((ele) => ele != " ").join("");
+  let a = [];
+  for (let i = 0; i < array.length; i++) {
+    a.push(array);
+  }
+  let result = a.map(
+    (ele, i) => ele.slice(0, i) + (ele[i].toUpperCase() + ele.slice(i + 1))
+  );
+
+  let b = result.map((ele) => ele.split(""));
+  let c = [];
+  for (let i = 0; i < b.length; i++) {
+    let g = b[i];
+    for (let j = 0; j < arraySpace.length; j++) {
+      g.splice(arraySpace[j], 0, " ");
+    }
+    c.push(g);
+  }
+  return c.map((ele) => ele.join(""));
+}
+console.log(wave("two word "));
+
+//    ele.slice(0, i) + ele[i].toUpperCase() + ele.slice(i + 1);
+/*
+let arr = arrayString.filter((ele) => ele != " ");
+  let a = [];
+  for (let i = 0; i < arr.length; i++) {
+    a.push(arr);
+  }
+  return a;
+  */
