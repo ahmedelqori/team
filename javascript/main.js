@@ -765,3 +765,22 @@ function towerBuilder(nFloors) {
     .reverse();
 }
 */
+/*
+function persistence(num) {
+  let a = num.toString();
+  let count = 0;
+  for (let i = 0; i < a; i++) {
+    if (+num >= 10) {
+      let string = num
+        .toString()
+        .split("")
+        .reduce((cur, acc) => cur * acc);
+      num = string;
+      count += 1;
+    } else {
+      return count;
+    }
+  }
+}
+
+*/
