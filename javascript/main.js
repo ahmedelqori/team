@@ -784,3 +784,24 @@ function persistence(num) {
 }
 
 */
+/*
+function duplicateCount(text) {
+  let a = text.toLowerCase("").split("").sort();
+  let b = [];
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] != a[i + 1] && a[i + 1] != undefined) {
+      b.push(a[i]);
+      b.push("-");
+    } else {
+      b.push(a[i]);
+    }
+  }
+  let c = b
+    .join("")
+    .split("-")
+    .filter((ele) => ele.length > 1);
+  return c.length == 0 ? 0 : c.length;
+}
+*/
+console.log(duplicateCount("abcde"));
+console.log(duplicateCount("aabBcde"));
