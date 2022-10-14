@@ -747,3 +747,21 @@ function wave(string) {
   return c.map((ele) => ele.join(""));
 }
 */
+/*
+function towerBuilder(nFloors) {
+  let numOfn = nFloors + nFloors - 1;
+  let star = "*";
+  let arr = [];
+  for (let i = 0; i < nFloors; i++) {
+    let array = [];
+    array.push(" ".repeat(i));
+    array.push(star.repeat(numOfn - i * 2));
+    array.push(" ".repeat(i));
+    arr.push(array);
+  }
+  return arr
+    .map((ele) => ele.join(" "))
+    .map((ele) => ele.slice(1, ele.length - 1))
+    .reverse();
+}
+*/
