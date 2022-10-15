@@ -854,3 +854,26 @@ function sortArray(array) {
   return arrayEven;
 }
 */
+/*
+function pickPeaks(x) {
+  let a = [];
+  let b = [];
+  let array = [];
+  let arraySlice = [];
+  for (let i = 1; i < x.length - 1; i++) {
+    if (x[i] > x[i + 1] && x[i] > x[i - 1]) {
+      a.push(i);
+      b.push(x[i]);
+    } else if (x[i] >= x[i + 1] && x[i] > x[i - 1]) {
+      arraySlice = x.slice(i);
+      array = Array.from(new Set(arraySlice));
+      if (array.length > 1 && array[0] > array[1]) {
+        a.push(i);
+        b.push(array[0]);
+      }
+    }
+  }
+
+  return { pos: a, peaks: b };
+}
+*/
