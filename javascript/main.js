@@ -833,3 +833,24 @@ function order(words){
    }).join(' ');
 }  
 */
+/*
+function sortArray(array) {
+  let arrayOdd = [];
+  let arrayIndexOdd = [];
+  let arrayEven = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 != 0) {
+      arrayOdd.push(array[i]);
+      arrayIndexOdd.push(i);
+    } else {
+      arrayEven.push(array[i]);
+    }
+  }
+  arrayOdd.sort((a, b) => a - b);
+  for (let i = 0; i < arrayOdd.length; i++) {
+    arrayEven.splice(arrayIndexOdd[i], 0, arrayOdd[i]);
+  }
+  return arrayEven;
+}
+*/
