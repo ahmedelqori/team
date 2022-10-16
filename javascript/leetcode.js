@@ -62,3 +62,8 @@ var romanToInt = function (s) {
   return result;
 };
 */
+/*
+var mySqrt = function (x) {
+  return Math.floor(Math.sqrt(x));
+};
+*/
