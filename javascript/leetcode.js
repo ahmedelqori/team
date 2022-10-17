@@ -67,3 +67,36 @@ var mySqrt = function (x) {
   return Math.floor(Math.sqrt(x));
 };
 */
+/*
+var isValid = function (s) {
+  if (s.length % 2 != 0) {
+    return 0;
+  }
+
+  let list = {
+    "(": 1,
+    "[": 2,
+    "{": 3,
+    ")": -1,
+    "]": -2,
+    "}": -3,
+  };
+
+  let array = s.split("").map((ele) => list[ele]);
+
+  let result = [...array];
+  let nothing = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (result[j] == -result[j + 1] && result[j] > result[j + 1]) {
+        result.splice(j, 2);
+      }
+    }
+  }
+  return result.length == 0 ? true : false;
+};
+console.log(isValid(")(}{]["));
+console.log(isValid("()[]{}"));
+console.log(isValid("(]"));
+console.log(isValid("()[}"));
+*/
