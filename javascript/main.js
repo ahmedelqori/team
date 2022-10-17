@@ -866,3 +866,16 @@ function findOutlier(integers){
   }
 }
 */
+/*
+function digitalRoot(n) {
+  
+let str = n.toString()
+let result = 0
+for(let  i = 0;i<=2;i++){
+    result = str.split("").map(Number).reduce((cur,acc)=>cur+acc)
+    str = result.toString()
+  console.log(str)
+}
+return result
+}
+*/
