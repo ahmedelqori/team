@@ -855,36 +855,14 @@ function sortArray(array) {
 }
 */
 /*
-function pickPeaks(x) {
-  let a = [];
-  let b = [];
-  let array = [];
-  let arraySlice = [];
-  for (let i = 1; i < x.length - 1; i++) {
-    if (x[i] > x[i + 1] && x[i] > x[i - 1]) {
-      a.push(i);
-      b.push(x[i]);
-    } else if (x[i] >= x[i + 1] && x[i] > x[i - 1]) {
-      arraySlice = x.slice(i);
-      array = Array.from(new Set(arraySlice));
-      if (array.length > 1 && array[0] > array[1]) {
-        a.push(i);
-        b.push(array[0]);
-      }
+function findOutlier(integers){
+  if(integers.length>=3){
+    let checkEven = integers.filter(ele=>ele%2==0)
+    if(checkEven.length ==1){
+      return +integers.filter(ele=>ele%2 == 0).join("")
+    }else{
+      return +integers.filter(ele=>ele%2!=0).join("")
     }
   }
-
-  return { pos: a, peaks: b };
 }
 */
-function inArray(array1, array2) {
-  let arr = [];
-  for (let i = 0; i < array1.length; i++) {
-    for (let j = 0; j < array2.length; j++) {
-      if (array2[j].includes(array1[i])) {
-        arr.push(array1[i]);
-      }
-    }
-  }
-  return Array.from(new Set(arr)).sort();
-}
