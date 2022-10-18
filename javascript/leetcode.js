@@ -120,3 +120,15 @@ var plusOne = function (digits) {
 console.log(plusOne([4, 3, 2, 1]));
 console.log(plusOne([6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 4]));
 */
+/*
+var searchInsert = function (nums, target) {
+  if (nums.indexOf(target) >= 0) {
+    return nums.indexOf(target);
+  } else {
+    nums.push(target);
+    return nums.sort().indexOf(target);
+  }
+};
+console.log(searchInsert([1, 3, 5, 6], 5));
+console.log(searchInsert([1, 3, 5, 6], 7));
+*/
