@@ -879,3 +879,83 @@ for(let  i = 0;i<=2;i++){
 return result
 }
 */
+/*
+function validBraces(braces){
+   if (braces.length % 2 != 0) {
+    return false;
+  }
+
+  let list = {
+    "(": 1,
+    "[": 2,
+    "{": 3,
+    ")": -1,
+    "]": -2,
+    "}": -3,
+  };
+
+  let array = braces.split("").map((ele) => list[ele]);
+
+  let result = [...array];
+  let nothing = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+      if (result[j] == -result[j + 1] && result[j] > result[j + 1]) {
+        result.splice(j, 2);
+      }
+    }
+  }
+  return result.length == 0 ? true : false;
+}
+*/
+/*
+var RomanNumerals = {
+  list: {
+    I: 1,
+    IV: 4,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  },
+  fromRoman: function (ele) {
+    let array = ele.split("");
+    let result = 0;
+    for (let i = 0; i < array.length; i++) {
+      if (
+        (array[i] == "I" && (array[i + 1] == "V" || array[i + 1] == "X")) ||
+        (array[i] == "X" && (array[i + 1] == "L" || array[i + 1] == "C")) ||
+        (array[i] == "C" && (array[i + 1] == "D" || array[i + 1] == "M"))
+      ) {
+        result += this.list[array[i + 1]] - this.list[array[i]];
+        i++;
+      } else {
+        result += this.list[array[i]];
+      }
+    }
+    return result;
+  },
+  toRoman: function (ele) {
+    let array = ele.toString().split("").map(Number);
+    let arr = [...array];
+    let result = arr.map(function (ele, ind, ar) {
+      let count = ar.length - 1 - ind;
+      return [ele + "0".repeat(count)];
+    });
+    for(let i = 0;i<result.length;i++){
+
+      if(result[i][0]>1)
+
+
+
+
+    }
+
+
+    return result;
+  },
+};
+console.log(RomanNumerals.toRoman(1990));
+*/
