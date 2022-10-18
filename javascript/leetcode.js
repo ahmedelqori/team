@@ -67,7 +67,8 @@ var mySqrt = function (x) {
   return Math.floor(Math.sqrt(x));
 };
 */
-/*
+/* // 20. Valid Parentheses
+
 var isValid = function (s) {
   if (s.length % 2 != 0) {
     return 0;
@@ -99,4 +100,23 @@ console.log(isValid(")(}{]["));
 console.log(isValid("()[]{}"));
 console.log(isValid("(]"));
 console.log(isValid("()[}"));
+
+*/
+/*
+var lengthOfLastWord = function (s) {
+  return s
+    .split(" ")
+    .filter((ele) => ele != "")
+    .reverse()[0].length;
+};
+console.log(lengthOfLastWord("   fly me   to   the moon  "));
+*/
+/*
+var plusOne = function (digits) {
+  let num = BigInt(digits.map(Number).join("")) + BigInt(1);
+  return num.toString().split("");
+};
+
+console.log(plusOne([4, 3, 2, 1]));
+console.log(plusOne([6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 4]));
 */
