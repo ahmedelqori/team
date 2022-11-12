@@ -132,3 +132,26 @@ var searchInsert = function (nums, target) {
 console.log(searchInsert([1, 3, 5, 6], 5));
 console.log(searchInsert([1, 3, 5, 6], 7));
 */
+/*
+var isIsomorphic = function (s, t) {
+  let n = s.length;
+  if (s.length !== t.length) return false;
+
+  const map = {};
+  for (let i = 0; i < n; i++) {
+    const letterA = s[i];
+    const letterB = t[i];
+    if (map[letterA] === undefined) {
+      map[letterA] = letterB;
+    } else if (map[letterA] !== letterB) {
+      return false;
+    }
+  }
+  return true;
+};
+
+console.log(isIsomorphic("paper", "title"));
+console.log(isIsomorphic("aaper", "title"));
+console.log(isIsomorphic("egg", "add"));
+console.log(isIsomorphic("foo", "bar"));
+*/

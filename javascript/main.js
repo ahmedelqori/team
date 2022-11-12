@@ -910,9 +910,8 @@ function validBraces(braces){
 */
 /*
 var RomanNumerals = {
-  list: {
+  list1: {
     I: 1,
-    IV: 4,
     V: 5,
     X: 10,
     L: 50,
@@ -920,6 +919,7 @@ var RomanNumerals = {
     D: 500,
     M: 1000,
   },
+
   fromRoman: function (ele) {
     let array = ele.split("");
     let result = 0;
@@ -929,33 +929,16 @@ var RomanNumerals = {
         (array[i] == "X" && (array[i + 1] == "L" || array[i + 1] == "C")) ||
         (array[i] == "C" && (array[i + 1] == "D" || array[i + 1] == "M"))
       ) {
-        result += this.list[array[i + 1]] - this.list[array[i]];
+        result += this.list1[array[i + 1]] - this.list1[array[i]];
         i++;
       } else {
-        result += this.list[array[i]];
+        result += this.list1[array[i]];
       }
     }
     return result;
   },
-  toRoman: function (ele) {
-    let array = ele.toString().split("").map(Number);
-    let arr = [...array];
-    let result = arr.map(function (ele, ind, ar) {
-      let count = ar.length - 1 - ind;
-      return [ele + "0".repeat(count)];
-    });
-    for(let i = 0;i<result.length;i++){
-
-      if(result[i][0]>1)
-
-
-
-
-    }
-
-
-    return result;
-  },
+  toRoman: function (romanNumeral) {},
 };
-console.log(RomanNumerals.toRoman(1990));
+console.log(RomanNumerals.fromRoman("MMVIII"));
+console.log(RomanNumerals.toRoman(1999));
 */
